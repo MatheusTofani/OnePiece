@@ -1,0 +1,33 @@
+.devices {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .spaceSections();
+
+    &__text {
+        width: 50%;
+
+        &__title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .devices {
+        display: block;
+        text-align: center;
+    img{
+        height: 300px;
+    }
+        &__text {
+            width: 80%;
+    margin: 0 auto;
+            &__title {
+                text-align: center;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}

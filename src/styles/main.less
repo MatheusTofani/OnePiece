@@ -1,0 +1,72 @@
+// Importacoes
+@import 'hero.less';
+@import 'shows.less';
+@import 'plans.less';
+@import 'devices.less';
+@import 'faq.less';
+@import 'footer.less';
+
+// Reset 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+.buttons {
+    border: solid 2px white;
+    height: 60px;
+    color: white;
+    width: 130px;
+    font-size: 22px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.text {
+    &__medium {
+        color: white;
+        font-size: 20px;
+    }
+
+    &__small {
+        color: white;
+        font-size: 15px;
+    }
+
+    &__large {
+        color: white;
+        font-size: 30px;
+    }
+}
+
+body {
+    background-color: #000F08;
+}
+
+.spaceSections {
+    padding: 2vw 5.6vw;
+}
+
+@media (max-width: 768px){
+    .text {
+        &__medium {
+            color: white;
+            font-size: 18px;
+        }
+    
+        &__small {
+            color: white;
+            font-size: 15px;
+        }
+    
+        &__large {
+            color: white;
+            font-size: 22px;
+        }
+    }
+    
+}

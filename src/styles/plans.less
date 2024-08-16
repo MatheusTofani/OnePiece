@@ -1,0 +1,205 @@
+@import 'main.less';
+
+
+.plans--section {
+    margin-top: 20vh;
+
+    .plans__title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .plans {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 100px;
+        .spaceSections();
+
+        &__item {
+            background-color: rgba(0, 0, 0, 0.568);
+            height: 630px;
+            width: 90%;
+            border: solid white 3px;
+            transition: all .2s;
+            text-align: center;
+            position: relative;
+
+            img {
+                margin: -50px;
+                height: 300px;
+            }
+
+            &__title {
+                margin-top: 50px;
+            }
+
+            ul {
+                margin: 20px 0;
+                padding: 0 50px;
+                text-align: start;
+            }
+
+            &__price {
+                position: absolute;
+                right: 32%;
+                bottom: 110px;
+            }
+
+            &__button {
+                text-align: center;
+                margin-top: 70px;
+                position: absolute;
+                bottom: 30px;
+                margin: 0 auto;
+                right: 32%;
+
+                button {
+                    background-color: rgba(255, 166, 0, 0.705);
+
+                    &:hover {
+                        background-color: rgba(245, 169, 28, 0.897);
+                    }
+                }
+            }
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
+    }
+}
+
+@media (max-width:768px){
+    .plans--section {
+        margin-top: 20vh;
+    
+        .plans__title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    
+        .plans {
+            display: block;
+    
+            &__item {
+                background-color: rgba(0, 0, 0, 0.568);
+                height: 650px;
+                width: 80%;
+                margin: 0 auto 50px auto;
+                text-align: center;
+    
+                img {
+                    margin-top: 10px;
+                    height: 300px;
+                }
+    
+                &__title {
+                    margin-top: 50px;
+                }
+    
+                ul {
+                    margin: 20px 0;
+                    padding: 0 0;
+                    text-align: center;
+                    list-style: none;
+                }
+    
+                &__price {
+                    position: none;
+                    text-align: center;
+                    bottom: 110px;
+                    right: 35%;
+                    margin-top: 20px;
+                }
+    
+                &__button {
+                    text-align: center;
+                    margin-top: 70px;
+                    position: none;
+                    bottom: 30px;
+    
+                    button {
+                        background-color: rgba(255, 166, 0, 0.705);
+    
+                        &:hover {
+                            background-color: rgba(245, 169, 28, 0.897);
+                        }
+                    }
+                }
+    
+                &:hover {
+                    transform: scale(1.00);
+                }
+            }
+    
+        }
+    }
+}
+
+@media (min-width:769px) and (max-width: 1024px){
+    .plans--section {
+        margin-top: 20vh;
+    
+        .plans__title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    
+        .plans {
+            display: block;
+    
+            &__item {
+                background-color: rgba(0, 0, 0, 0.568);
+                height: 700px;
+                width: 50%;
+                margin: 0 auto 50px auto;
+                text-align: center;
+    
+                img {
+                    margin-top: 10px;
+                    height: 300px;
+                }
+    
+                &__title {
+                    margin-top: 50px;
+                }
+    
+                ul {
+                    margin: 20px 0;
+                    padding: 0 0;
+                    text-align: center;
+                    list-style: none;
+                    margin-bottom: 20px;
+                }
+    
+                &__price {
+                    position: none;
+                    text-align: center;
+                    bottom: 110px;
+                    right: 35%;
+                }
+    
+                &__button {
+                    text-align: center;
+                    margin-top: 70px;
+                    position: none;
+                    bottom: 30px;
+    
+                    button {
+                        background-color: rgba(255, 166, 0, 0.705);
+    
+                        &:hover {
+                            background-color: rgba(245, 169, 28, 0.897);
+                        }
+                    }
+                }
+    
+                &:hover {
+                    transform: scale(1.00);
+                }
+            }
+    
+        }
+    }
+}

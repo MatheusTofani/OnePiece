@@ -1,0 +1,29 @@
+@import 'main.less';
+
+.hero {
+    background-image: url(../../image/hero.png);
+    height: 660px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__title {
+        text-align: center;
+        padding: 50px 0;
+        width: 90%;
+    }
+
+    &__button {
+        .buttons();
+        background-color: #8d4a1bc2;
+
+        &:hover {
+            background-color: #cf783ac2;
+        }
+    }
+}
+
